@@ -1,0 +1,13 @@
+---
+- name: My sample playbook
+  hosts: localhost
+
+  tasks:
+
+    - name: Test reachability task
+      ping: 
+
+    - name: Install stress
+      homebrew:
+        name: stress
+        state: present
