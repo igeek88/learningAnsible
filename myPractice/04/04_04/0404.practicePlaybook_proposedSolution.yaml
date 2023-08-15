@@ -1,0 +1,13 @@
+---
+- name: 0404 - Practice playbook proposed solution
+  hosts: localhost
+
+  tasks:
+
+    - name: Ping localhost
+      ping:
+
+    - name: Find module
+      find:
+        path: $HOME/git/mine/learningAnsible/myPractice/04/04_04/sampleFiles/
+        file_type: file

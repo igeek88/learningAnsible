@@ -1,0 +1,14 @@
+---
+- name: 0404 - Practice playbook
+  hosts: localhost
+
+  tasks:
+
+    - name: Ping localhost
+      ping:
+
+    - name: Display files contents
+      ansible.builtin.debug: var=item
+      with_file:
+        - sampleFile1.txt
+        - sampleFile2.txt
