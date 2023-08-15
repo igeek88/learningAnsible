@@ -1,5 +1,5 @@
 ---
-- name: My sample playbook
+- name: 0401 - My sample playbook
   hosts: localhost
 
   tasks:
